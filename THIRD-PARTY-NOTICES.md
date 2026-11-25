@@ -49,6 +49,9 @@ el aviso MIT de su autor.
   de retos resueltos: obra propia bajo **MIT** (`LICENSE`).
 - Los writeups derivan de competiciones reales; se publican sin flags, sin datos
   de infraestructura y sin identificar a terceros.
+- La licencia MIT de `LICENSE` **no** se aplica a `skills/`, que conserva la
+  licencia declarada en el frontmatter de cada `SKILL.md` (Apache-2.0 en las
+  skills derivadas de terceros).
 
 ---
 

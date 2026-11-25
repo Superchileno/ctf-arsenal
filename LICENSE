@@ -19,13 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Alcance de esta licencia
-
-- Aplica al contenido original de este repositorio: `docs/`, `plantillas/`,
-  `herramientas/`, `arsenal/` (código propio) y este mismo texto.
-- NO aplica a `skills/`, que conserva la licencia declarada en el frontmatter de
-  cada `SKILL.md` (mayoritariamente Apache-2.0) y cuyas fuentes se detallan en
-  `THIRD-PARTY-NOTICES.md`.
