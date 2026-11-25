@@ -1,0 +1,17 @@
+CORRECTOR DE NOTACIÓN — PRÁCTICA 17
+
+COMPASES: 105
+ALTURAS REPRODUCIDAS: SIN CAMBIOS
+DURACIONES: SIN CAMBIOS
+INCONSISTENCIAS DE ESCRITURA: 12
+
+DETALLE:
+- cada inconsistencia está en un compás con 16 notas individuales;
+- hay 8 notas en el pentagrama superior y 8 en el inferior;
+- el corrector cuenta primero las 8 del pentagrama superior, de izquierda a derecha;
+- después cuenta las 8 del pentagrama inferior, también de izquierda a derecha;
+- el contador comienza en 0.
+
+OBSERVACIÓN:
+"Si suena igual, no busques otra nota.
+Mira cómo quedó escrita."

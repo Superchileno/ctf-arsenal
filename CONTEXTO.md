@@ -75,11 +75,29 @@ Resumen: **13 skills de CTF + 20 de pentest/auditoría = 33**.
   `https://github.com/ljagiello/ctf-skills` (MIT, `a6106aaf`).
 - Informes: `backups\saneo-skills-antes.md` y `backups\saneo-skills-fix.md`.
 
+### 2026-11-24 — Importación de writeups locales
+
+- Nuevo `arsenal\import_local.ps1`: copia solo documentación y scripts
+  (`.md .py .sh .txt .csv .json`, ≤ 256 KB), excluyendo `work\`, `evidence\`,
+  `flags\`, `backups\` y binarios.
+- `ctf\` de `AUDITORIA_IA_V2` → `CTF\trama-2026\` (319 archivos, 50 carpetas).
+- `ANCI\` de `AUDITORIA_IA_V2` → `CTF\anci-2026\` (234 archivos, 14 carpetas).
+- Saneamiento de lo importado con `arsenal\sanitize.py --fix`:
+  trama: 431 flags, 63 hosts, 70 IPs, 11 rutas; anci: 25 flags, 98 hosts,
+  37 correos, 4 IPs, 6 rutas. Verificación posterior: **0 hallazgos**.
+- Informes: `backups\saneo-trama.md`, `backups\saneo-anci.md`.
+- Carpeta con nombre corrupto `se?alfantasma` renombrada a `senalfantasma`.
+
+### 2026-11-24 — Repositorio Git local
+
+- `git init -b main` en la raíz del proyecto, commit inicial
+  `CTF arsenal: 33 skills, plantillas, cheatsheets y saneamiento` (187 archivos).
+- Remote configurado: `origin https://github.com/Superchileno/ctf-arsenal.git`.
+- **Push pendiente**: no hay `gh` ni credenciales guardadas en el entorno.
+
 ### 2026-11-24 — Pendiente
 
-- `git init` + push a `github.com/Superchileno/ctf-arsenal` (requiere `gh` o
-  credenciales; `git` solo existe en Kali/WSL).
-- Poblar `CTF\` con los retos de `AUDITORIA_IA_V2\ctf\` y `ANCI\`, saneados.
+- Crear el repositorio en GitHub y hacer `push -u origin main`.
 
 ## Tabla de backups
 
@@ -88,3 +106,5 @@ Resumen: **13 skills de CTF + 20 de pentest/auditoría = 33**.
 | 2026-11-24 | `skills\` (árbol completo, 154 archivos) | `backups\skills.20261124-234047\` | Saneamiento previo a publicación |
 | 2026-11-24 | `skills\` (informe) | `backups\saneo-skills-antes.md` | Detección previa al fix |
 | 2026-11-24 | `skills\` (informe) | `backups\saneo-skills-fix.md` | Detalle de reemplazos aplicados |
+| 2026-11-24 | `ctf\` local (informe) | `backups\saneo-trama.md` | Saneamiento de writeups importados |
+| 2026-11-24 | `ANCI\` local (informe) | `backups\saneo-anci.md` | Saneamiento de writeups importados |

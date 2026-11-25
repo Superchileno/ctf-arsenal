@@ -1,0 +1,37 @@
+Contents of the .debug_line section:
+
+Scrt1.c:
+File name                        Line number    Starting address    View    Stmt
+crt1.c                                    15              0x1e06               x
+crt1.c                                    16              0x1e06       1       x
+crt1.c                                    17              0x1e06       2       x
+crt1.c                                    18              0x1e06       3       x
+crt1.c                                    17              0x1e08        
+crt1.c                                    18              0x1e0c        
+crt1.c                                    18              0x1e24        
+crt1.c                                    18              0x1e29        
+crt1.c                                     -              0x1e29
+
+
+crti.s:
+File name                        Line number    Starting address    View    Stmt
+crti.s                                     3              0x1000               x
+crti.s                                     4              0x1000       1       x
+crti.s                                     -              0x1001
+
+crti.s                                     8              0x2fa4               x
+crti.s                                     9              0x2fa4       1       x
+crti.s                                     -              0x2fa5
+
+
+crtn.s:
+File name                        Line number    Starting address    View    Stmt
+crtn.s                                     2              0x1001               x
+crtn.s                                     3              0x1002               x
+crtn.s                                     -              0x1003
+
+crtn.s                                     6              0x2fa5               x
+crtn.s                                     7              0x2fa6               x
+crtn.s                                     -              0x2fa7
+
+

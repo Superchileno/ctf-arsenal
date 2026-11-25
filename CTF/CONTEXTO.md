@@ -24,9 +24,17 @@ CTF\
 
 ## Índice de retos
 
-| Evento | Reto | Categoría | Estado | Fecha |
+| Evento | Retos importados | Carpeta | Estado | Fecha |
 |---|---|---|---|---|
-| — | *(sin retos todavía)* | — | — | — |
+| trama-2026 | 50 | [`trama-2026\`](trama-2026/) | Importado y saneado | 2026-11-24 |
+| anci-2026 | 14 | [`anci-2026\`](anci-2026/) | Importado y saneado | 2026-11-24 |
+
+Sub-evento dentro de `trama-2026`: `codigodemarte20261113\` (retos web del evento
+Código de Marte, 10 carpetas).
+
+Cada carpeta conserva su `CONTEXTO.md`/`README.md` y sus scripts en `solucion\`.
+Los artefactos pesados y los directorios `work\`, `flags\` y `evidence\` **no** se
+importaron: viven en el repositorio de origen.
 
 ## Plantilla y criterios
 
@@ -49,4 +57,5 @@ CTF\
 
 | Fecha | Evento | Reto | Resultado |
 |---|---|---|---|
-| — | — | — | — |
+| 2026-11-24 | trama-2026 | 50 carpetas importadas | Saneadas (431 flags y 63 hosts retirados) |
+| 2026-11-24 | anci-2026 | 14 carpetas importadas | Saneadas (25 flags y 98 hosts retirados) |

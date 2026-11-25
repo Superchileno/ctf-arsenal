@@ -1,0 +1,4 @@
+[i] 576 bits = 72 bytes
+[i] ASCII: VFJBTUFDVEZ7RWxfQjRuMF9WMVBfVDNuMTRfQ2w0djNfUDNyMF9OMF9UM24xNF9QNHAzbH0=
+[i] Base64 decodificado: flag{ejemplo}
+[+] FLAG: flag{ejemplo}

@@ -1,0 +1,8 @@
+[1] hex -> ASCII          : 37260 caracteres
+    muestra: ':SA B7VT9BH8SIC$QE$B9+B7NEC5S6:SA B7VT9BH8SIC$QE$B9+B7NEC5S6'
+[2] Base45 -> texto       : 24840 caracteres
+    muestra: 'T29rLiBPb2suIE9vay4gT29rLiBPb2suIE9vay4gT29rLiBPb2suIE9vay4g'   (parece Base64)
+[3] Base64 -> código      : 18629 caracteres
+    muestra: 'Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. Ook. '   (Ook!: el 'mono escribiendo')
+[4] Ook! -> Brainfuck     : 1863 instrucciones
+[5] Brainfuck -> FLAG     : flag{ejemplo}

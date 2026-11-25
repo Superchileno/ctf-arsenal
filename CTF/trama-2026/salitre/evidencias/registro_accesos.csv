@@ -1,0 +1,9 @@
+fecha,hora_oficial_local,puerto,muelle,camara,alias,credencial,evento
+2026-01-16,02:44,Tocopilla,3,CAM-07,petrel,PORT-31,ingreso
+2026-01-16,03:01,Tocopilla,3,CAM-07,gaviota,PORT-11,salida
+2026-01-16,03:06,Mejillones,3,CAM-09,azul,PORT-09,ingreso
+2026-01-16,03:06,Tocopilla,3,CAM-07,cormoran,PORT-17,habilitacion_extraordinaria
+2026-01-16,03:06,Tocopilla,2,CAM-02,farero,PORT-38,ingreso
+2026-01-16,03:07,Tocopilla,3,CAM-07,albatros,PORT-22,salida
+2026-01-16,03:22,Tocopilla,3,CAM-11,petrel,PORT-31,salida
+2026-01-16,03:31,Tocopilla,3,CAM-07,merlin,PORT-05,ingreso

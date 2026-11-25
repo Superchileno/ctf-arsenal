@@ -1,0 +1,15 @@
+TRAMA CTF / REGISTRO DE RADIO SIMULADO
+ARCHIVO: REFUGIO-06 / MISION FOTITO
+ESTADO: INTERFERENCIA EN LA SENAL
+DESTINO REGISTRADO: TERMAS DE COLINA
+
+MENSAJE_INTERCEPTADO:
+}0e0t_4pu_e0x_01mi5_0p1hp_t3{QHEAZICH .QITCQST NH VP GQMNLPIS SBV J SXEVV LWDAU .WECH AAC CCR SBUTIH
+
+NOTAS DE CALIBRACION
+[1] "La ventisca dio vuelta el mensaje entero, de la ultima marca a la primera".
+[2] "Para abrirlo, usa solo la ultima palabra del destino como llave".
+[3] "La llave se repite de principio a fin; solo avanzas al leer letras A-Z".
+[4] "Numeros, espacios, puntos, llaves y guiones bajos no cambian".
+
+NOTA: documento inventado para un desafio de criptografia; no es un registro real.

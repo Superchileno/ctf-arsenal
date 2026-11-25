@@ -1,0 +1,6 @@
+fecha,camara,puerto,muelle,hora_mostrada,hora_oficial_local,estado
+2026-01-16,CAM-02,Tocopilla,2,03:17,03:17,correcto
+2026-01-16,CAM-04,Iquique,1,03:17,03:23,atrasado
+2026-01-16,CAM-07,Tocopilla,3,03:17,03:06,adelantado
+2026-01-16,CAM-09,Mejillones,3,03:17,03:13,adelantado
+2026-01-16,CAM-11,Tocopilla,3,03:17,03:22,atrasado

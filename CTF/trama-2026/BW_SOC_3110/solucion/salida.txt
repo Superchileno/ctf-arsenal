@@ -1,0 +1,11 @@
+[i] PNG válido hasta el byte 4098
+[i] tamaño total 4389 -> 291 bytes anexados tras el IEND
+[i] firma ZIP en offset 0 del trailer
+[+] guardado embed.zip (291 bytes)
+[+] contenido del ZIP:
+    - flag.txt (37 bytes)
+      flag{ejemplo}
+
+    - nota.txt (47 bytes)
+      Enhorabuena, has mirado debajo de la alfombra.
+

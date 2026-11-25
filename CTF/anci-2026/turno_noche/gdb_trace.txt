@@ -1,0 +1,15 @@
+set pagination off
+starti < in.txt
+python
+import gdb, re
+s = gdb.execute("info files", to_string=True)
+base = int(re.search(r"Entry point: (0x[0-9a-fA-F]+)", s).group(1), 16) - 0x12b0
+class FetchBP(gdb.Breakpoint):
+    def stop(self):
+        rax = int(gdb.parse_and_eval("$rax"))
+        ip = int(gdb.parse_and_eval("*(unsigned short*)($rax+0x1010)"))
+        print("IP %d" % ip)
+        return False
+FetchBP("*0x%x" % (base + 0x1410))
+gdb.execute("continue")
+end

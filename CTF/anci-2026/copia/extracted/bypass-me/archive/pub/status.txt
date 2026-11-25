@@ -1,0 +1,4 @@
+node: arc-07
+state: read-only
+uptime: 41d
+pending seals: 0

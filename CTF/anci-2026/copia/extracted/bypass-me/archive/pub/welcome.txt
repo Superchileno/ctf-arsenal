@@ -1,0 +1,2 @@
+LIMBO cold-storage node 'arc-07'
+public archive. blocks 1-4 are open; maintenance data is sealed.

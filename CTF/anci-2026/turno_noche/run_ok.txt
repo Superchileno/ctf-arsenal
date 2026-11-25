@@ -1,0 +1,2 @@
+Bytewatch night shift console
+Enter shift passphrase: flag{ejemplo}

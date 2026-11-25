@@ -1,0 +1,16 @@
+[i] perfil
+  login: VladElVeg666 | name: Vlad The Vegeterian | bio: I love tomatos!!! | repos: 1
+[i] repositorios
+   VladElVeg666/Mis_Recetas_Favoritas - Tomates, tomates y mas tomates!
+[i] commits
+   0bc36fc0 Update secret ingredient in README 2026-10-17T18:02:48Z
+   4afebb92 Add secret recipe section to README 2026-10-17T18:01:42Z
+   2ca8c7bb Initial commit 2026-10-17T17:59:55Z
+[i] README por commit
+  guardado README_0bc36fc0.md (264 bytes)
+  guardado README_4afebb92.md (252 bytes)
+  guardado README_2ca8c7bb.md (56 bytes)
+
+[+] flags encontradas en el historial:
+      2 flag{ejemplo}
+      1 flag{ejemplo}

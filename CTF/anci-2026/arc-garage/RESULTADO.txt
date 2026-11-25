@@ -1,0 +1,62 @@
+ARC GARAGE — old-school-bins (ANCI / HackRocks)
+================================================
+
+FLAG
+----
+flag{ejemplo}
+
+Servicio: nc <host> 28809
+Binario:  ELF x86-64 PIE, musl 1.2.5 (mallocng), kit old-school-bins.zip
+Exploit:  scripts/exploit_remote.py
+Verificado en dos ejecuciones independientes (ASLR distinto):
+  leak = 0x70cf9ce5d310 -> libc = 0x70cf9cdbb000
+  leak = 0x74844afc1310 -> libc = 0x74844af1f000
+
+RESUMEN DE LA EXPLOTACIÓN
+-------------------------
+1. Vulnerabilidad (Tune Car / prompt_edit_string)
+   La longitud guardada se redondea a múltiplo de 8 para decidir si se reutiliza
+   el buffer, pero mallocng alinea por clases de 16 bytes. Al tunear un texto de
+   longitud 92 (clase sc5, usable 92) con una cadena de 95 bytes se escriben 4
+   bytes justo en el header in-band del siguiente slot.
+
+2. Overwrite de header en dos pasos
+   - Paso 1: escribir [basura, idx, offset, 0x00] en el header del chunk siguiente.
+   - Paso 2: una cadena de 92 bytes termina en NUL justo en el byte 0 del header,
+     dejando [0x00, idx, offset, 0x00], un header válido por la vía de 16 bits de
+     get_meta() de mallocng.
+
+3. Free con tamaño/índice incorrecto (nested groups)
+   Un slot de un grupo hijo (sc5) está físicamente dentro de un slot del grupo
+   padre (sc15). Con idx = índice del slot padre y offset = (p - H15)/16 - 1 se
+   libera el slot del PADRE (el grupo sc5 completo) usando el meta del padre,
+   mientras el grupo hijo sigue "en uso".
+
+4. Solapamiento y leak
+   Se rellena el último slot libre sc5 y se construye otro coche: el calloc(0x50)
+   reutiliza el slot padre liberado y crea un nuevo grupo sc5 exactamente encima
+   del anterior. El primer slot (modelo del coche 9) pasa a ser el struct del
+   coche 11; Show Garage imprime el puntero model del coche 11.
+   En este layout: leak = libc + 0xa2310.
+
+5. Arbitrary read/write
+   Tune sobre el modelo del coche 9 escribe 7 bytes dentro del struct del coche
+   11, controlando su puntero model. Tune sobre el modelo del coche 11 copia
+   hasta 96 bytes a esa dirección (read/write arbitrarios acotados).
+
+6. RCE vía stdio (FILE de stdout)
+   stdout FILE = libc + 0x9f280, system = libc + 0x449fd.
+   Una única escritura contigua en el FILE coloca:
+     - comando "/bin/busybox cat flag.txt #" al inicio,
+     - wend = wpos = wbase no nulos,
+     - write = system.
+   El siguiente fputs/fflush ejecuta system(FILE), es decir el comando, y
+   devuelve la flag.
+
+NOTAS
+-----
+- El comando empieza por '/' para fijar F_NOWR y evitar que __towrite borre
+  rpos/rend; además se comentan con '#' los bytes de control del FILE.
+- Si algún puntero necesario contiene un byte NUL (no representable en la
+  cadena de read_line), el exploit reconecta para obtener otro ASLR.
+- El offset leak->libc (0xa2310) resultó estable también en remoto (4 KiB pages).

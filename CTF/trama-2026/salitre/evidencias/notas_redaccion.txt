@@ -1,0 +1,8 @@
+RED NORTE | Nota del equipo investigador | 17-01-2026
+Caso: SAL-16, incidente en la costa norte.
+
+- La imagen de CAM-07 pertenece al muelle 3 de Tocopilla. Ese reloj no tenia sincronizacion automatica.
+- Varios buques figuran en el rastreo durante el mismo turno. No atribuir un zarpe por cercania de hora sin cruzar puerto y muelle.
+- El manifiesto contiene los folios y precintos originales; los alias de turno estan en el registro de accesos.
+- Los TXT del dominio ficticio control.salitre.invalid son copias locales. No consultar DNS real.
+- La jefatura insiste en que "si el reloj esta malo, seguro el barco tampoco salio". Favor contrastar evidencias antes de informar.

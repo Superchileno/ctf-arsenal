@@ -1,0 +1,17 @@
+set pagination off
+starti < in.txt
+python
+import gdb, re
+s = gdb.execute("info files", to_string=True)
+base = int(re.search(r"Entry point: (0x[0-9a-fA-F]+)", s).group(1), 16) - 0x12b0
+print("BASE", hex(base))
+class RetBP(gdb.Breakpoint):
+    def stop(self):
+        rsp = int(gdb.parse_and_eval("$rsp"))
+        ip = int(gdb.parse_and_eval("*(unsigned short*)($rsp+0x1010)"))
+        rv = int(gdb.parse_and_eval("*(unsigned int*)($rsp+0x1014)"))
+        print("FINAL ip=%d ret=%d" % (ip, rv))
+        return True
+RetBP("*0x%x" % (base + 0x1278))
+gdb.execute("continue")
+end

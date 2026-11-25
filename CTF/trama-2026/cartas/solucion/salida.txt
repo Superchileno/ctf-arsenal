@@ -1,0 +1,17 @@
+[i] catálogo auténtico: 16 glifos
+[i] diferencias glifos.txt vs reimpresion.txt: {'▽': ('9', '2'), '▲': ('2', '9')}
+
+======================================================================
+### lamina_quintrala.txt
+--- con catálogo AUTÉNTICO ---
+flag{ejemplo}
+>>> FLAG AQUÍ <<<
+--- con catálogo REIMPRESIÓN ---
+flag{ejemplo}
+
+======================================================================
+### lamina_promocional.txt
+--- con catálogo AUTÉNTICO ---
+ENSAYO DE IMPRENTA SIN VALOR DE TORNEO
+--- con catálogo REIMPRESIÓN ---
+ENSARO�DE�BMPYENTA�SBN�VALOY�DE�TOYNEO

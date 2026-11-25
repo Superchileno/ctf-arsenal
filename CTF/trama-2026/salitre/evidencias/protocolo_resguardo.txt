@@ -1,0 +1,21 @@
+ANEXO T-04 | Registro de la naviera | Recuperado de la carpeta de capacitacion
+
+Para auditar las copias locales de TXT control.salitre.invalid:
+
+1. Los registros de una sesion se nombran _meta.ALIAS.FOLIO y _pNN.ALIAS.FOLIO.
+   El folio para DNS se escribe en minusculas y sin guion (ej.: A-0001 -> a0001).
+2. _meta incluye algoritmo, IV (hexadecimal de 16 bytes) y SHA-256 del mensaje original.
+3. Cada _pNN contiene un segmento hexadecimal del texto cifrado y el indice s=NN/TT.
+   Concatenar los segmentos por NN, sin separadores. El orden de las lineas no importa.
+4. Algoritmo de recuperacion: AES-256-CTR. La llave tiene 32 bytes y se calcula como:
+
+   SHA256( UTF8( FOLIO|CONTENEDOR|ALIAS|HORA_UTC ) )
+
+   El separador es el caracter | (barra vertical), sin espacios adicionales.
+   FOLIO y CONTENEDOR deben copiarse del manifiesto respetando mayusculas y guion.
+   ALIAS se escribe en minusculas. HORA_UTC usa el patron AAAA-MM-DDTHH:MMZ.
+   Convertir la hora oficial local a UTC usando el huso declarado en el informe.
+5. El IV se obtiene de _meta; el SHA-256 publicado permite validar el resultado.
+
+No se guardan claves en servidores publicos. Una hora o un folio equivocado produce basura.
+Este documento describe el formato, NO identifica la sesion que corresponde al incidente.

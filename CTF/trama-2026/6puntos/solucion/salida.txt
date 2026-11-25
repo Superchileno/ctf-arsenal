@@ -1,0 +1,12 @@
+Secuencia de pulsos (orden por DateTimeOriginal):
+
+ 1. 2026:10:17 03:17:00  IMG_7C2E.jpg     -33.02450, -71.55180  -> Viña del Mar
+ 2. 2026:10:18 04:21:00  IMG_2E8C.jpg     -33.67969, -70.98482  -> El Monte
+ 3. 2026:10:19 09:13:00  IMG_19B7.jpg     -34.98279, -71.23943  -> Curicó
+ 4. 2026:10:20 17:04:00  IMG_A91F.jpg     -35.42694, -71.66556  -> Talca
+ 5. 2026:10:21 20:26:00  IMG_F03A.jpg     -40.57389, -73.13361  -> Osorno
+ 6. 2026:10:22 23:08:00  IMG_D440.jpg     -40.86764, -72.58711  -> Rupanco
+
+Nombres normalizados (sin tildes ni espacios): ['VinadelMar', 'ElMonte', 'Curico', 'Talca', 'Osorno', 'Rupanco']
+Iniciales: VECTOR (deben formar VECTOR)
+FLAG: flag{ejemplo}

@@ -1,0 +1,2 @@
+[+] bit LSB = 0
+[+] mensaje: flag{ejemplo}

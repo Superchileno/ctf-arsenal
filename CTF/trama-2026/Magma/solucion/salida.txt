@@ -1,0 +1,6 @@
+[i] imagen 2100x520
+[i] periodo del mosaico: 164 px -> 12.8 repeticiones horizontales
+[i] píxeles fuera del patrón: 63682
+[i] bandas de texto detectadas: [(np.int64(108), np.int64(179)), (np.int64(303), np.int64(374))]
+[+] línea 1: filas 108-179 -> work/linea1.png
+[+] línea 2: filas 303-374 -> work/linea2.png

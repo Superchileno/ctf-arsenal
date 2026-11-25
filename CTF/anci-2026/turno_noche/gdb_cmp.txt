@@ -1,0 +1,11 @@
+set pagination off
+starti < in.txt
+set $base = $pc - 0x12b0
+printf "BASE=%p\n", $base
+break *($base+0x15aa)
+commands
+silent
+printf "CMP op1=%u op2=%u ip=%u\n", *(unsigned short*)($rax+$r10*2+0x1000), *(unsigned short*)($rax+$rdx*2+0x1000), *(unsigned short*)($rax+0x1010)
+continue
+end
+continue

@@ -1,0 +1,16 @@
+== 1) EXIF de las 5 fotografías ==
+  atardecer_lisboa.jpg sin EXIF (limpia)
+  cafe_manana.jpg      sin EXIF (limpia)
+  mercado.jpg          sin EXIF (limpia)
+  muelle.jpg           sin EXIF (limpia)
+  ultima_foto.jpg      CON EXIF -> {'Make': 'Pixel', 'Software': 'cam-app 4.2', 'Artist': 'valen_nomade_priv', '_gps': {'GPSLatitudeRef': 'S', 'GPSLatitude': (33.0, 2.0, 0.0), 'GPSLongitudeRef': 'W', 'GPSLongitude': (71.0, 37.0, 0.0)}}
+      -> huella de usuario: 'valen_nomade_priv'
+      -> GPS: -33.0333, -71.6167
+
+== 2) Perfil archivado que corresponde a esa huella ==
+  abriendo valen_nomade_priv.html
+  código: VFJBTUFDVEZ7Ym9ycm9fbGFfY3VlbnRhX25vX2VsX21ldGFkYXRvfQ==
+
+== 3) Decodificación ==
+  flag{ejemplo}
+  [+] guardada en flag.txt

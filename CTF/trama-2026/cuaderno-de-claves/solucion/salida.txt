@@ -1,0 +1,3 @@
+[+] clave: CE2RCA | 205 bytes
+------------------------------------------------------------
+Bitacora 14-07-1987, 03:12 UTC. Capte de nuevo la emision fantasma en 7.045 MHz. Nadie del club me cree. Dejo la prueba cifrada como siempre, con nuestra senal: flag{ejemplo}
