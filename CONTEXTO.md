@@ -108,13 +108,24 @@ Resumen: **13 skills de CTF + 20 de pentest/auditoría = 33**.
 - Remote configurado: `origin https://github.com/Superchileno/ctf-arsenal.git`.
 - **Push pendiente**: no hay `gh` ni credenciales guardadas en el entorno.
 
+### 2026-11-24 — Intento de publicación (token revocado)
+
+- `Superchileno/ctf-arsenal` **existe** en GitHub (creado vacío, público, rama `main`).
+- Primer intento con PAT fine-grained: el token funcionó en la API (`login:
+  Superchileno`) y luego pasó a `401 Bad credentials`; el push falló con
+  *«Invalid username or token»*.
+- Causa: el token fue revocado (GitHub revoca tokens expuestos en texto
+  público/claros). **No se debe pegar el token en el chat.**
+- Token eliminado del disco local y del remote; el remote quedó limpio
+  (`https://github.com/Superchileno/ctf-arsenal.git`).
+- Procedimiento seguro: guardar el token en
+  `%TEMP%\opencode\gh_token.txt` y ejecutar `arsenal\crear_repo.sh`
+  (push vía `GIT_ASKPASS`, sin exponer credenciales en la URL).
+
 ### 2026-11-24 — Pendiente
 
-- Crear el repositorio en GitHub y hacer `push -u origin main`.
-  - `arsenal\publicar.sh` deja el trabajo en un comando: `--check` (diagnóstico),
-    `--crear` (con `gh` autenticado) o `TOKEN=ghp_xxx` para un push puntual.
-  - Verificado: el push falla hoy con *«could not read Username»* porque el
-    entorno no tiene `gh` ni credenciales guardadas.
+- Push a `github.com/Superchileno/ctf-arsenal` con un token nuevo que tenga
+  **Contents: Read and write** sobre ese repositorio.
 
 ## Tabla de backups
 
