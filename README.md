@@ -60,6 +60,21 @@ python arsenal\ctf-arsenal xor known --plain p.txt --cipher c1.hex --target c2.h
 python arsenal\sanitize.py --path docs\ --check
 ```
 
+### 5. Publicar el repositorio
+
+```bash
+# Verificar estado y credenciales
+wsl -d kali-linux -- bash arsenal/publicar.sh --check
+
+# Con gh autenticado (crea el repo y hace push)
+wsl -d kali-linux -- bash arsenal/publicar.sh --crear
+
+# Con token puntual
+TOKEN=ghp_xxx wsl -d kali-linux -- bash arsenal/publicar.sh
+```
+
+Repositorio destino: `github.com/Superchileno/ctf-arsenal`.
+
 ---
 
 ## Estructura de un objetivo

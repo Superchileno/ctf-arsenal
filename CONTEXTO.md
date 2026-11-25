@@ -111,6 +111,10 @@ Resumen: **13 skills de CTF + 20 de pentest/auditoría = 33**.
 ### 2026-11-24 — Pendiente
 
 - Crear el repositorio en GitHub y hacer `push -u origin main`.
+  - `arsenal\publicar.sh` deja el trabajo en un comando: `--check` (diagnóstico),
+    `--crear` (con `gh` autenticado) o `TOKEN=ghp_xxx` para un push puntual.
+  - Verificado: el push falla hoy con *«could not read Username»* porque el
+    entorno no tiene `gh` ni credenciales guardadas.
 
 ## Tabla de backups
 
