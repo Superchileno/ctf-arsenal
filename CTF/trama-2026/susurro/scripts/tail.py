@@ -4,9 +4,9 @@ from scipy import signal
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-rate, x = wavfile.read("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
+rate, x = wavfile.read("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
 x = x.astype(np.float64)
-out = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/"
+out = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/"
 
 # zona "silenciosa" 4.61-7.26 s: amplificar y mirar
 seg = x[int(4.61*rate):]

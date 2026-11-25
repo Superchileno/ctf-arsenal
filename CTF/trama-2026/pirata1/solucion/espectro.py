@@ -10,7 +10,7 @@ from pathlib import Path
 
 import numpy as np
 
-W = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work")
+W = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work")
 with wave.open(str(W / "senal_malapata.wav")) as w:
     fr = w.getframerate()
     x = np.frombuffer(w.readframes(w.getnframes()), dtype="<i2").astype(np.float64)

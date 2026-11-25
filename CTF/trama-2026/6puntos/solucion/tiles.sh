@@ -1,5 +1,5 @@
 #!/bin/bash
-D="/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/6puntos/work/mapa"
+D="/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/6puntos/work/mapa"
 mkdir -p "$D"
 UA="User-Agent: ctf-research/1.0"
 # punto 6: -40.86764,-72.58711  -> z12 x1222 y2558 ; vecinos para contexto

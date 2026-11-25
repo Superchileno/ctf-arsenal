@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-PNG = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/docx/word/media/image1.png")
+PNG = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/docx/word/media/image1.png")
 img = Image.open(PNG)
 modos = [("RGB", img.convert("RGB")), ("RGBA", img.convert("RGBA")), ("L", img.convert("L"))]
 

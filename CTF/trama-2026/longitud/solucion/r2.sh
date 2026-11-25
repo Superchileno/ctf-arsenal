@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/longitud || exit 1
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/longitud || exit 1
 echo "=== ejecucion simple ==="
 printf '8\nAAAA\n' | timeout 5 ./longitud_heredada 2>&1 | head -20
 echo "=== exit: $? ==="

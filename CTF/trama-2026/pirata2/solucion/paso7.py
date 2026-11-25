@@ -5,7 +5,7 @@ import struct
 import zipfile
 from pathlib import Path
 
-PNG = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/docx/word/media/image1.png")
+PNG = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/docx/word/media/image1.png")
 d = PNG.read_bytes()
 pos = 8
 print("chunks PNG:")
@@ -18,7 +18,7 @@ while pos < len(d):
     if tipo == "IEND":
         break
 
-DOCX = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/acta_henry_every.docx")
+DOCX = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/acta_henry_every.docx")
 print("\nposibles cadenas largas sin espacios en todas las partes:")
 with zipfile.ZipFile(DOCX) as z:
     for n in z.namelist():

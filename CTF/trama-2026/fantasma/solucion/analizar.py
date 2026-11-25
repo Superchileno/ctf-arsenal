@@ -5,7 +5,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-W = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/fantasma/work")
+W = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/fantasma/work")
 filas = list(csv.DictReader(W.joinpath("proxy_trace.csv").open()))
 
 por_flujo = defaultdict(list)

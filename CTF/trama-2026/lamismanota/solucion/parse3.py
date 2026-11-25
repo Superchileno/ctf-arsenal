@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 from collections import Counter
 
-P = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/lamismanota/mscz/mi heart is broken.mscx"
+P = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/lamismanota/mscz/mi heart is broken.mscx"
 root = ET.parse(P).getroot()
 score = root.find("Score")
 

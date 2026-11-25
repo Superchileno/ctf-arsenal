@@ -1,5 +1,5 @@
 #!/bin/bash
-D="/mnt/c/Users/luis.miranda/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid"
+D="/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid"
 cd ~
 gcc -nostdlib -static -Os -fno-stack-protector -fno-pie -no-pie -fno-asynchronous-unwind-tables -o dp "$D/dp.c" 2>&1 | head -20
 ls -l dp

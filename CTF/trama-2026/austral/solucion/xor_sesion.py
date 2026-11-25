@@ -11,7 +11,7 @@ Se prueban varias combinaciones y se muestra lo que sea imprimible.
 """
 from pathlib import Path
 
-W = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/austral/work")
+W = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/austral/work")
 sesion = W.joinpath("mi_sesion.txt").read_bytes()
 t1 = bytes.fromhex(W.joinpath("mi_token.txt").read_text().strip())
 t2 = bytes.fromhex(W.joinpath("token_gerencia.txt").read_text().strip())

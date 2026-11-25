@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.io import wavfile
 
-rate, x = wavfile.read("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
+rate, x = wavfile.read("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
 x = x.astype(np.float64)
 
 # Estimar f0 con precision (autocorrelacion en la zona de mayor energia)

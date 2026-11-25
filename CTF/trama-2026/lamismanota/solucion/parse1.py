@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import sys, re
 
-P = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/lamismanota/mscz/mi heart is broken.mscx"
+P = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/lamismanota/mscz/mi heart is broken.mscx"
 tree = ET.parse(P)
 root = tree.getroot()
 

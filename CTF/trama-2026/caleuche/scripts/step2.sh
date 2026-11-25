@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/caleuche || exit 1
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/caleuche || exit 1
 
 echo "== Tamano del sobre =="
 ls -l llave_sobre.rsa manifiesto.enc

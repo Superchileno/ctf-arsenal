@@ -1,7 +1,7 @@
 #!/bin/bash
-D=/mnt/c/Users/shapl/AppData/Local/Temp/opencode/mantenimiento
+D=/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/mantenimiento
 mkdir -p "$D" && cd "$D" || exit 1
-cp -f "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/mantenimiento/pulso_mantenimiento" . 2>/dev/null
+cp -f "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/mantenimiento/pulso_mantenimiento" . 2>/dev/null
 chmod +x pulso_mantenimiento
 file pulso_mantenimiento
 sha256sum pulso_mantenimiento

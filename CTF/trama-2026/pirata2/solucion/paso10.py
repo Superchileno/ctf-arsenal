@@ -3,7 +3,7 @@
 import re
 from pathlib import Path
 
-D = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/docx")
+D = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/docx")
 for parte in ("word/document.xml", "word/header1.xml", "word/footer1.xml"):
     x = (D / parte).read_text(errors="replace")
     print(f"--- {parte}: {len(x)} bytes")

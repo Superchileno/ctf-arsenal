@@ -3,7 +3,7 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 
-png = mpimg.imread("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
+png = mpimg.imread("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
 g = png[..., :3].mean(axis=2)
 
 y0, y1 = 830, 990       # banda del texto
@@ -20,6 +20,6 @@ for name, (t0, t1) in {"A": (0.45, 1.75), "B": (1.75, 3.1), "C": (3.1, 4.85)}.it
     plt.imshow(sub, aspect="auto", cmap="magma", interpolation="nearest", vmin=0, vmax=0.6)
     plt.axis("off")
     plt.tight_layout(pad=0)
-    plt.savefig(f"/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/txt_{name}.png")
+    plt.savefig(f"/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/txt_{name}.png")
     plt.close()
     print(name, sub.shape)

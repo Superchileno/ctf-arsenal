@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 from faster_whisper import WhisperModel
 
-W = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work")
+W = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work")
 
 
 def leer(ruta: Path) -> np.ndarray:

@@ -86,7 +86,7 @@ Script completo guardado en `work/desanidar.py` (además vuelca cada capa en `wo
 Ejecución en el entorno (Kali/WSL2):
 
 ```bash
-wsl -d kali-linux -- bash -lc "python3 /mnt/c/Users/shapl/AppData/Local/Temp/opencode/ctf01_unzip.py"
+wsl -d kali-linux -- bash -lc "python3 /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/ctf01_unzip.py"
 ```
 
 ### Opción B — shell puro (unzip en bucle)

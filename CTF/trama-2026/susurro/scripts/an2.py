@@ -5,7 +5,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from scipy import signal
 
-rate, x = wavfile.read("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
+rate, x = wavfile.read("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
 x = x.astype(np.float64)
 print("rate", rate, "n", len(x), "dur", len(x)/rate)
 print("mean", x.mean(), "std", x.std())
@@ -19,7 +19,7 @@ plt.figure(figsize=(26, 9), dpi=110)
 plt.pcolormesh(t, f, Sdb, shading="auto", cmap="inferno", vmin=Sdb.max()-70, vmax=Sdb.max())
 plt.ylim(0, 6000)
 plt.xlabel("t (s)"); plt.ylabel("Hz"); plt.title("0-6 kHz")
-plt.tight_layout(); plt.savefig("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/np_low.png")
+plt.tight_layout(); plt.savefig("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/np_low.png")
 plt.close()
 
 # perfil espectral medio para ver armonicos

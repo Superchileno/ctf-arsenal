@@ -12,7 +12,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-LOG = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/centinela/eventos.log")
+LOG = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/centinela/eventos.log")
 
 
 def campos(linea: str) -> dict:

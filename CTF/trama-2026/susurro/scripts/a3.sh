@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro || exit 1
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro || exit 1
 mkdir -p out
 # recorte temporal 0.5-4.8s y banda 2500-4500 Hz, alta resolucion
 sox ChismeAudio.wav -n trim 0.5 4.3 highpass 2400 lowpass 4600 rate 12000 \

@@ -3,9 +3,9 @@ from scipy.io import wavfile
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-rate, x = wavfile.read("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
+rate, x = wavfile.read("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
 x = x.astype(np.float64)
-out = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/"
+out = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/"
 
 # frecuencia fundamental estimada del peine
 f0 = 108.6

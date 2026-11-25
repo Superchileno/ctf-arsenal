@@ -11,7 +11,7 @@ recuperar el keystream y aplicarlo a `token_gerencia.txt`.
 """
 from pathlib import Path
 
-W = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/austral/work")
+W = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/austral/work")
 p1 = W.joinpath("mi_sesion.txt").read_bytes()
 c1 = bytes.fromhex(W.joinpath("mi_token.txt").read_text().strip())
 c2 = bytes.fromhex(W.joinpath("token_gerencia.txt").read_text().strip())

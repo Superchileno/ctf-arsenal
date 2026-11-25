@@ -1,7 +1,7 @@
 import numpy as np, hashlib
 from scipy.io import wavfile
 
-rate, x = wavfile.read("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
+rate, x = wavfile.read("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
 x = np.asarray(x).astype(np.int32)
 
 regions = {"intro": (0, int(0.569*rate)), "cuerpo": (int(0.569*rate), int(4.609*rate)),

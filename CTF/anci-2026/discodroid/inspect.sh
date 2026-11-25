@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-D="/mnt/c/Users/luis.miranda/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid/extracted/discodroid"
+D="/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid/extracted/discodroid"
 cd ~
 rm -rf ddroot && mkdir ddroot && cd ddroot
 cpio -idmv < "$D/rootfs.cpio" 2>/dev/null | tail -3

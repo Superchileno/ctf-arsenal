@@ -3,9 +3,9 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 
-png = mpimg.imread("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
+png = mpimg.imread("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
 g = png[..., :3].mean(axis=2)
-out = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/"
+out = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/"
 
 # region del texto en el PNG: y ~ 855..935 (2.4-4.1 kHz), x = 14 + t/7.256*2112
 def x_of(t): return int(14 + t/7.256*2112)

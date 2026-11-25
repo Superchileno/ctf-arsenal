@@ -1,5 +1,5 @@
 #!/bin/bash
-D="/mnt/c/Users/luis.miranda/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid/extracted/discodroid"
+D="/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid/extracted/discodroid"
 echo "--- tools ---"
 for t in qemu-system-x86_64 gcc musl-gcc tcc strip base64 cpio; do printf "%s: " "$t"; command -v "$t" || echo MISSING; done
 echo "--- image ---"

@@ -1,6 +1,6 @@
 import struct, sys
 
-p = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/longitud/longitud_heredada"
+p = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/longitud/longitud_heredada"
 data = open(p, "rb").read()
 
 # parse program headers para mapear vaddr -> offset

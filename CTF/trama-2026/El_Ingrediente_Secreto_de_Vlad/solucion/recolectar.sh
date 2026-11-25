@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-D="/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/El_Ingrediente_Secreto_de_Vlad/work"
+D="/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/El_Ingrediente_Secreto_de_Vlad/work"
 mkdir -p "$D"
 UA="User-Agent: ctf-research"
 API="https://api.github.com/repos/VladElVeg666/Mis_Recetas_Favoritas"

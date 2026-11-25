@@ -48,7 +48,7 @@ Resumen: **13 skills de CTF + 20 de pentest/auditoría = 33**.
 
 ### 2026-11-24 — Creación del repositorio
 
-- Raíz creada en `C:\Users\shapl\OneDrive - dipreca.cl\Agentes IA\CTF`.
+- Raíz creada como carpeta hermana de `AUDITORIA_IA_V2`, en `Agentes IA\CTF`.
 - Carpetas base: `backups`, `skills`, `arsenal`, `herramientas`, `plantillas`,
   `docs`, `CTF`, `AUDITORIA`, `PENTESTING`.
 - Skills copiadas desde `AUDITORIA_IA_V2\.agents\skills`: 13 de CTF y 20 de
@@ -87,6 +87,19 @@ Resumen: **13 skills de CTF + 20 de pentest/auditoría = 33**.
   37 correos, 4 IPs, 6 rutas. Verificación posterior: **0 hallazgos**.
 - Informes: `backups\saneo-trama.md`, `backups\saneo-anci.md`.
 - Carpeta con nombre corrupto `se?alfantasma` renombrada a `senalfantasma`.
+
+### 2026-11-24 — Reparación de archivos y rutas de perfil
+
+- Incidencia: un script de reemplazo con arreglos aplanados de PowerShell corrompió
+  texto en `AGENTS.md`, `CONTEXTO.md` y `herramientas\kali-wsl.md`.
+- Reparación: `git checkout HEAD --` de los tres archivos y reaplicación manual de
+  los cambios con el editor (nunca con reemplazos de un carácter).
+- `sanitize.py`: nuevas reglas para rutas de perfil en forma WSL/msys
+  (`/mnt/c/Users/<usuario>`, `/c/Users/<usuario>`) y con separador normal
+  (`C:/Users/<usuario>`).
+- Resultado: 146 reemplazos en 119 archivos de `CTF\`; verificación global
+  **0 hallazgos** y sin restos del usuario real en el árbol.
+- Informe: `backups\saneo-rutas-mnt.md`.
 
 ### 2026-11-24 — Repositorio Git local
 

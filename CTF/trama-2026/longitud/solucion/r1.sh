@@ -1,8 +1,8 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode 2>/dev/null || mkdir -p /mnt/c/Users/shapl/AppData/Local/Temp/opencode/longitud
-mkdir -p /mnt/c/Users/shapl/AppData/Local/Temp/opencode/longitud
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/longitud || exit 1
-cp -f "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/longitud/longitud_heredada" . 2>/dev/null
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode 2>/dev/null || mkdir -p /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/longitud
+mkdir -p /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/longitud
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/longitud || exit 1
+cp -f "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/longitud/longitud_heredada" . 2>/dev/null
 chmod +x longitud_heredada
 file longitud_heredada
 echo "--- sha256 ---"

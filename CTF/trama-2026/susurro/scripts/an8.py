@@ -4,9 +4,9 @@ from scipy import signal
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-rate, x = wavfile.read("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
+rate, x = wavfile.read("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
 x = x.astype(np.float64)
-out = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/"
+out = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/"
 
 f, t, S = signal.spectrogram(x, fs=rate, nperseg=2048, noverlap=1800, window="hann", scaling="spectrum")
 Sdb = 10*np.log10(S+1e-20)

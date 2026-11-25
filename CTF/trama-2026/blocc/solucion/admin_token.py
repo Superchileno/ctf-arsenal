@@ -6,7 +6,7 @@ import subprocess
 
 COOKIE = "trama_session=h1VKBwbj5fd2y9kKmlmtHKuvSRvGNPtZ9sJODeI7BpN7otZM5b2ZRaw5H8q-CVcQ"
 BASE = "https://<host>"
-W = "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/blocc/work"
+W = "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/blocc/work"
 
 
 def b64(o) -> str:

@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/lamismanota || exit 1
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/lamismanota || exit 1
 echo "=== tipos ==="
 file practica_17.mscz anotaciones.zip
 echo

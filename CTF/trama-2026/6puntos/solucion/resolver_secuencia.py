@@ -22,7 +22,7 @@ import urllib.request
 
 from PIL import Image, ExifTags
 
-BASE = "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/6puntos"
+BASE = "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/6puntos"
 FOTOS = BASE + "/work/*.jpg"
 
 # Municipio / lugar identificado por geocodificación inversa (ver CONTEXTO.md)

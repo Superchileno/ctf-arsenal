@@ -1,8 +1,8 @@
 #!/bin/bash
-D="/mnt/c/Users/luis.miranda/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid/extracted/discodroid"
+D="/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid/extracted/discodroid"
 cd ~
 python3 - <<'EOF'
-d=open("/mnt/c/Users/luis.miranda/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid/extracted/discodroid/Image","rb").read()
+d=open("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid/extracted/discodroid/Image","rb").read()
 i=d.find(b"\x1f\x8b\x08")
 print("gzip offset",hex(i))
 open("/tmp/kernel.gz","wb").write(d[i:])

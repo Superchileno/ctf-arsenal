@@ -4,7 +4,7 @@ import re
 import zipfile
 from pathlib import Path
 
-DOCX = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/acta_henry_every.docx")
+DOCX = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/acta_henry_every.docx")
 ETIQUETAS = ["w:delText", "w:instrText", "w:comment", "w:fldSimple", "w:hyperlink",
              "w:bookmarkStart", "w:docPart", "w:altChunk", "w:txbxContent",
              "w:customXml", "w:sdt", "w:proofErr"]

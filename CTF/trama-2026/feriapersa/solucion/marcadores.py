@@ -6,7 +6,7 @@ import urllib.parse
 
 COOKIE = "trama_session=Vgb10FPCRELz_F_vMBbmZuRHczUjV3V1DKFygYKh22mTBZdgeA-3Qsy5Sgd3RSKU"
 BASE = "https://<host>"
-W = "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/feriapersa/work"
+W = "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/feriapersa/work"
 
 
 def get(q: str) -> str:

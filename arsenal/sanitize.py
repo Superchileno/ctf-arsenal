@@ -39,6 +39,14 @@ REGLAS = [
     # Rutas Windows con usuario (el reemplazo es literal: se aplica vía función)
     (r"[A-Za-z]:\\\\?Users\\\\?[^\\\\/\s\"'<>]+",
      r"C:\Users\<usuario>", "ruta"),
+    # Rutas WSL/msys hacia el perfil de Windows: /mnt/c/Users/<usuario>/...
+    (r"/mnt/[a-z]/Users/[^/\s\"'<>]+",
+     "/mnt/c/Users/<usuario>", "ruta"),
+    (r"/[a-z]/Users/[^/\s\"'<>]+",
+     "/c/Users/<usuario>", "ruta"),
+    # Rutas Windows con separador normal
+    (r"[A-Za-z]:/Users/[^/\s\"'<>]+",
+     "C:/Users/<usuario>", "ruta"),
     # Rutas Linux con usuario
     (r"/home/(?!<usuario>|ctf\b|user\b|ubuntu\b|root\b|node\b|app\b|kali\b)"
      r"[A-Za-z0-9._-]+",

@@ -24,7 +24,7 @@ import re
 import zlib
 from pathlib import Path
 
-W = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/fantasma/work")
+W = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/fantasma/work")
 
 patron = re.compile(r'\[([^\]]+)\].*"GET /telemetry/sync\?rid=([^&"]+)&p=([^ "]+)')
 eventos = {}

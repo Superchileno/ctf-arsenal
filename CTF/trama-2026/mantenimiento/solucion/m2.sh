@@ -1,5 +1,5 @@
 #!/bin/bash
-D=/mnt/c/Users/shapl/AppData/Local/Temp/opencode/mantenimiento
+D=/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/mantenimiento
 cd "$D" || exit 1
 echo "=== prueba ORION-03 ==="
 printf 'ORION-03\n' | ./pulso_mantenimiento

@@ -19,7 +19,7 @@ import re
 from PIL import ExifTags, Image
 from PIL.ExifTags import GPSTAGS
 
-BASE = "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/La_Cuenta_que_No_Existia/work"
+BASE = "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/La_Cuenta_que_No_Existia/work"
 
 INTERES = {"Artist", "UserComment", "Copyright", "ImageDescription", "Software", "Make", "Model"}
 

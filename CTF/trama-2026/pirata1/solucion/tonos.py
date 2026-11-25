@@ -8,7 +8,7 @@ from pathlib import Path
 
 import numpy as np
 
-W = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work")
+W = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work")
 mag = np.load(W / "mag.npy")          # (tramas, bins), hop 46 ms
 fre = np.load(W / "fre.npy")
 n, nb = mag.shape

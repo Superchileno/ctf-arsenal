@@ -3,9 +3,9 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 
-png = mpimg.imread("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
+png = mpimg.imread("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
 g = png[..., :3].mean(axis=2)
-out = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/"
+out = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/"
 
 # 1) recorte 1:1 de la banda baja completa (y 700-1060) -> mismo aspecto que el original
 sub = g[700:1060, 0:2144]

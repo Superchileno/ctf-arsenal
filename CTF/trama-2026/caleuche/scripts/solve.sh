@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/caleuche || exit 1
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/caleuche || exit 1
 
 echo "== Huellas de claves publicas =="
 for i in 1 2 3; do

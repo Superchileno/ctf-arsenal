@@ -9,7 +9,7 @@ import numpy as np
 from pathlib import Path
 import wave
 
-W = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work")
+W = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work")
 ruta = W / "senal_malapata.wav"
 
 with wave.open(str(ruta)) as w:

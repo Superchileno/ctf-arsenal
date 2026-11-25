@@ -172,7 +172,8 @@ Nunca cerrar una tarea sin backup y sin actualizar el contexto.
 
 - Kali Linux en WSL2: `wsl -d kali-linux -- bash -lc "<comando>"`.
 - Comandos con comillas o bucles: escribir el script en
-  `C:\Users\shapl\AppData\Local\Temp\opencode\*.sh` y ejecutarlo desde WSL.
+  `%TEMP%\opencode\*.sh` (en Kali: `/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/`)
+  y ejecutarlo desde WSL.
 - Kali está en modo mirrored: alcanza directamente la LAN.
 - `git` no está en el PATH de Windows: usar `wsl -d kali-linux` para git o
   `C:\Program Files\Git\bin\git.exe` si existe.

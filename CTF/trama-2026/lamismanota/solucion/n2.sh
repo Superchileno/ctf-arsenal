@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/lamismanota || exit 1
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/lamismanota || exit 1
 rm -rf mscz && mkdir mscz
 cd mscz
 unzip -o -q ../practica_17.mscz

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.image as mpimg
 
-img = mpimg.imread("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
+img = mpimg.imread("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
 print("shape", img.shape)
 g = img[..., :3].mean(axis=2)
 print("rows", g.shape[0], "cols", g.shape[1])

@@ -6,7 +6,7 @@ import re
 import sys
 from html import unescape
 
-W = "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/feriapersa/work"
+W = "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/feriapersa/work"
 
 def texto(html: str) -> str:
     html = re.sub(r"(?is)<(script|style).*?</\1>", " ", html)

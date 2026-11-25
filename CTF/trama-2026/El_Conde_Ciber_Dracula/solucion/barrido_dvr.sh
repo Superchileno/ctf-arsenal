@@ -1,6 +1,6 @@
 #!/bin/bash
 # Extrae frame + recorte de esquina (canal verde) para una lista de sq
-cd "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/El_Conde_Ciber_Dracula/work" || exit 1
+cd "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/El_Conde_Ciber_Dracula/work" || exit 1
 mkdir -p dvr esq2 tmp
 # refrescar playlist para tener URL base con firma válida
 URL=$(head -1 hls_720.txt)

@@ -5,7 +5,7 @@ from pathlib import Path
 
 from PIL import Image
 
-PNG = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/docx/word/media/image1.png")
+PNG = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/docx/word/media/image1.png")
 W = PNG.parent.parent.parent.parent  # .../pirata2/work
 img = Image.open(PNG).convert("RGB")
 px = img.load()

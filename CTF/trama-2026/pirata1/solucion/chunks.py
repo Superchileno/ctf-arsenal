@@ -3,7 +3,7 @@
 import struct
 from pathlib import Path
 
-P = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work/senal_malapata.wav")
+P = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata1/work/senal_malapata.wav")
 d = P.read_bytes()
 print(f"tamaño: {len(d)}")
 assert d[:4] == b"RIFF"

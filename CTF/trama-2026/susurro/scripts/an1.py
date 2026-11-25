@@ -1,6 +1,6 @@
 import wave, struct, sys, collections, re
 
-p = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav"
+p = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav"
 raw = open(p, "rb").read()
 print("size", len(raw))
 print("header first 64:", raw[:64].hex())

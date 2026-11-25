@@ -17,7 +17,7 @@ import base64
 import re
 import sys
 
-BASE = "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/mojojojo"
+BASE = "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/mojojojo"
 RUTA = sys.argv[1] if len(sys.argv) > 1 else BASE + "/work/transmision.txt"
 
 # Base45 (RFC 9285)

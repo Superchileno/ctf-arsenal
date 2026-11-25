@@ -1,5 +1,5 @@
 #!/bin/bash
-D=/mnt/c/Users/shapl/AppData/Local/Temp/opencode/mantenimiento
+D=/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/mantenimiento
 cd "$D" || exit 1
 echo "===== main (0x11f8) ====="
 objdump -d pulso_mantenimiento --start-address=0x11f8 --stop-address=0x1400 | sed -n '6,120p'

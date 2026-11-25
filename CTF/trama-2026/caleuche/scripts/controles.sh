@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/caleuche || exit 1
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/caleuche || exit 1
 KEY="$(od -An -tx1 -v llave_aes.bin | tr -d ' \n')"
 
 echo "== Control: IV de la boya (iv_boya.hex) con la llave correcta =="

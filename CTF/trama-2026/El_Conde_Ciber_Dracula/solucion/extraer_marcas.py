@@ -17,7 +17,7 @@ from collections import OrderedDict
 
 from PIL import Image, ImageOps
 
-W = "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/El_Conde_Ciber_Dracula/work"
+W = "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/El_Conde_Ciber_Dracula/work"
 CAJA = (1040, 624, 1268, 654)   # caja ancha: la marca puede ser más larga que 16 chars
 TMP = W + "/tmp_ocr"
 os.makedirs(TMP, exist_ok=True)

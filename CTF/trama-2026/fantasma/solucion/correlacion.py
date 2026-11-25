@@ -6,7 +6,7 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 
-W = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/fantasma/work")
+W = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/fantasma/work")
 patron = re.compile(r'^(\S+) - - \[([^\]]+)\].*"GET /telemetry/sync\?rid=([^&"]+)&p=([^ "]+)')
 info = {}
 for l in W.joinpath("access.log").read_text(errors="replace").splitlines():

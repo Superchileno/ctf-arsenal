@@ -10,7 +10,7 @@ folleto PROMO.
 import re
 import sys
 
-BASE = "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/cartas/work/"
+BASE = "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/cartas/work/"
 
 
 def cargar_catalogo(path):

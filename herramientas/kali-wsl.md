@@ -11,11 +11,11 @@ wsl -d kali-linux --cd /mnt/c/Users/<usuario>/ruta -- bash -lc "ls -la"
 ```
 
 Scripts con bucles, comillas o `$variables`: escribir el `.sh` en
-`C:\Users\shapl\AppData\Local\Temp\opencode\` y ejecutarlo desde WSL para evitar
+`%TEMP%\opencode\` y ejecutarlo desde WSL para evitar
 el mangleo de PowerShell.
 
 ```powershell
-wsl -d kali-linux -- bash /mnt/c/Users/shapl/AppData/Local/Temp/opencode/tarea.sh
+wsl -d kali-linux -- bash "$(wslpath -u '%TEMP%\opencode\tarea.sh')"
 ```
 
 ## Estado y red
@@ -64,7 +64,7 @@ Conjuntos útiles por categoría:
 `git` no está en el PATH de Windows. Usar:
 
 ```powershell
-wsl -d kali-linux -- bash -lc "cd /mnt/c/Users/shapl/OneDrive*/... && git status"
+wsl -d kali-linux -- bash -lc "cd '/mnt/c/Users/<usuario>/OneDrive - <organizacion>/Agentes IA/CTF' && git status"
 ```
 
 o `C:\Program Files\Git\bin\git.exe` si está instalado.

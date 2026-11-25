@@ -2,7 +2,7 @@ import numpy as np
 from scipy.io import wavfile
 from scipy import signal
 
-rate, x = wavfile.read("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
+rate, x = wavfile.read("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
 x = x.astype(np.float64)
 print("rate", rate)
 
@@ -30,7 +30,7 @@ print(sorted([(round(f[i]), round(10*np.log10(P[i]+1e-20),1)) for i in idx]))
 print("mediana dB:", round(10*np.log10(np.median(P)+1e-20),1))
 
 # guardar 0-0.5s amplificado
-wavfile.write("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/intro_x50.wav", rate, np.int16(np.clip(x[:int(0.5*rate)]*50, -32768, 32767)))
+wavfile.write("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/intro_x50.wav", rate, np.int16(np.clip(x[:int(0.5*rate)]*50, -32768, 32767)))
 print("escrito intro_x50.wav")
 
 # comparar LSB y estructura del tramo silencioso

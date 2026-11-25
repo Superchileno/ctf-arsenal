@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.image as mpimg
 
-png = mpimg.imread("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
+png = mpimg.imread("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/spec_full.png")
 g = png[..., :3].mean(axis=2)
 H, W = g.shape
 colmean = g.mean(axis=0)

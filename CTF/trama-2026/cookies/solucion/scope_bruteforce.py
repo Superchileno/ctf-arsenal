@@ -33,5 +33,5 @@ for s in scopes:
         marca = " <<< FLAG " + re.search(r"TRAMACTF\{[^}]*\}", cuerpo).group(0)
     print(f"{s:20s} -> {code.strip():3s} len={len(cuerpo):5d}{marca}")
     if code.strip() == "200" and s != "vendor":
-        open(f"/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/cookies/work/anexo_{s}.html",
+        open(f"/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/cookies/work/anexo_{s}.html",
              "w", encoding="utf-8").write(cuerpo)

@@ -2,7 +2,7 @@
 """Descifra la 'orden' de pulso_mantenimiento (TEA-like, 32 rondas, clave derivada de ORION-03)."""
 import struct
 
-BIN = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/mantenimiento/pulso_mantenimiento"
+BIN = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/mantenimiento/pulso_mantenimiento"
 data = open(BIN, "rb").read()
 
 # .rodata: vaddr == offset
@@ -51,4 +51,4 @@ for i in range(0, CLEN, 8):
 print("\nbytes descifrados:", out)
 txt = out.split(b"\x00")[0]
 print("ORDEN:", txt.decode("latin1"))
-open("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/mantenimiento/orden.txt", "wb").write(txt + b"\n")
+open("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/mantenimiento/orden.txt", "wb").write(txt + b"\n")

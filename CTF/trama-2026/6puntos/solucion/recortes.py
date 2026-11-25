@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 
-W = "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/6puntos/work"
+W = "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/6puntos/work"
 O = W + "/zoom"
 os.makedirs(O, exist_ok=True)
 

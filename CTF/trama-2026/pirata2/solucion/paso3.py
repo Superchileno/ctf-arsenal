@@ -12,7 +12,7 @@ from pathlib import Path
 
 from PIL import Image
 
-DOCX = Path("/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/acta_henry_every.docx")
+DOCX = Path("/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/pirata2/work/acta_henry_every.docx")
 
 with zipfile.ZipFile(DOCX) as z:
     partes = [n for n in z.namelist() if n.endswith(".xml") and n.startswith("word/")]

@@ -2,7 +2,7 @@
 """Fase 2: volcado de las tablas puesto_13 y resenas."""
 import sys
 
-sys.path.insert(0, "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/feriapersa/solucion")
+sys.path.insert(0, "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/feriapersa/solucion")
 from sqli import valor  # noqa: E402
 
 pruebas = [

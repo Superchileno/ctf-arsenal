@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro || exit 1
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro || exit 1
 set -x
 soxi ChismeAudio.wav
 exiftool ChismeAudio.wav

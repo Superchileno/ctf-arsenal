@@ -5,9 +5,9 @@ from scipy.ndimage import zoom
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-rate, x = wavfile.read("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
+rate, x = wavfile.read("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
 x = x.astype(np.float64)
-out = "/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/out/"
+out = "/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/out/"
 bursts = [(0.569,0.818),(0.851,1.063),(1.087,1.362),(1.458,1.534),
           (1.939,2.160),(2.184,2.459),(2.474,2.714),(2.746,2.986),
           (3.028,3.240),(3.300,3.530),(3.563,3.793),(3.844,4.065),

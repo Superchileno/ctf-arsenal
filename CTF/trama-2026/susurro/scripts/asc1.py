@@ -2,7 +2,7 @@ import numpy as np
 from scipy.io import wavfile
 from scipy import signal
 
-rate, x = wavfile.read("/mnt/c/Users/shapl/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
+rate, x = wavfile.read("/mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/susurro/ChismeAudio.wav")
 x = x.astype(np.float64)
 
 def ascii_spec(lo, hi, nrows, ncols, t0, t1, gamma=1.0):

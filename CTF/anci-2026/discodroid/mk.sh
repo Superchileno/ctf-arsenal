@@ -1,5 +1,5 @@
 #!/bin/bash
-D="/mnt/c/Users/luis.miranda/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid"
+D="/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ANCI/discodroid"
 name="$1"
 cd ~
 gcc -nostdlib -static -Os -fno-builtin -fno-stack-protector -fno-pie -no-pie \

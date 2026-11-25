@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /mnt/c/Users/shapl/AppData/Local/Temp/opencode/caleuche || exit 1
+cd /mnt/c/Users/<usuario>/AppData/Local/Temp/opencode/caleuche || exit 1
 echo "llave AES (hex): $(od -An -tx1 -v llave_aes.bin | tr -d ' \n')"
 echo
 echo "== Descifrando manifiesto.enc (AES-256-CBC, IV de iv.hex) =="

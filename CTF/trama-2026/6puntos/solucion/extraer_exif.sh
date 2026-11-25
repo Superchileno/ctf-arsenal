@@ -1,5 +1,5 @@
 #!/bin/bash
-cd "/mnt/c/Users/shapl/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/6puntos/work" || exit 1
+cd "/mnt/c/Users/<usuario>/OneDrive - dipreca.cl/Agentes IA/AUDITORIA_IA_V2/ctf/6puntos/work" || exit 1
 for f in *.jpg; do
   echo "================ $f ================"
   exiftool -a -G1 -s "$f"
