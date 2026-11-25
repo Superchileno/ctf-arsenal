@@ -1,0 +1,58 @@
+# Artefactos personales y de trabajo — no se publican
+backups/
+work/
+flags/
+evidence/
+.superceded/
+.superseded/
+
+# Artefactos voluminosos o binarios de retos
+*.ova
+*.ova.part
+*.vmdk
+*.vdi
+*.qcow2
+*.iso
+*.pcap
+*.pcapng
+*.raw
+*.dd
+*.mem
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.gz
+*.xz
+
+# Excepciones: el material del arsenal sí se versiona
+!skills/**/scripts/*
+!arsenal/*
+!plantillas/*
+!docs/**
+!herramientas/**
+
+# Secretos
+.env
+*.env
+*.key
+*.pem
+*.pfx
+id_rsa*
+*.kdbx
+
+# Sistema y editores
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
